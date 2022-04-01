@@ -1,0 +1,20 @@
+{
+  "type": "module",
+  "name": "cozwork",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/coz-new-comer/internship.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/coz-new-comer/internship/issues"
+  },
+  "homepage": "https://gitlab.com/coz-new-comer/internship#readme"
+}

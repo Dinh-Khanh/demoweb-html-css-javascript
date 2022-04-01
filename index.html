@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.1.0-web/css/all.css">
+    <link rel="stylesheet" href="./assets/fonts/themify-icons-font/themify-icons/themify-icons.css">
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <h1>Retty</h1>
+        </div>
+
+        <div id="slider">
+            <div class="slider-heading box-shadow-ful-3px boder-radius-2px">
+                <h2>Private room dining Rakuzo-RAKUZO-Sapporo station square store</h2>
+            </div>
+            <div class="slider__list">
+                <div id="sliderOne" class="slider__list-item-one active-slider-color">Reservation details selection</div>
+                <div id="sliderTwo" class="slider__list-item-two">Confirmation of reservation details</div>
+                <div id="sliderThree" class="slider__list-item-three">Booking is done</div>
+            </div>
+        </div>
+        <div id="content">
+            <div class="page-one">
+                <div class="content-section">
+                    <!-- SELECT COURSE -->
+                    <div class="content-item-selectCourse box-shadow-ful-3px">
+                        <div class="content-heading">
+                                <p>Please select a <strong>course</strong></p>
+                                <a href="" class="js-changecourse">Change</a>
+                        </div>
+                        <ul class="content-list js-content-list">
+                            <!-- js -->
+                        </ul>
+    
+                    </div>
+                    <!-- END SELECT COURSE -->
+    
+                    <!-- SELECT DATE AND TIME -->
+                    <div class="content-item-selectDateTime content-date-visit-item box-shadow-ful-3px">
+                            <div style="display:block;" class="content-date-visit-item-step1 content-heading page-one__step-one">
+                                <div class="content-date-visit-heading opacity-06 js-content-date-visit-heading">
+                                    <p><strong>Please</strong> select the <strong>number of visitors and the date</strong> and <strong>time</strong> of <strong>your visit</strong></p>
+                                </div>
+                                <div class="content-date-visit-des ">
+                                    <p>If you select a course, you can select the number of people who can make a reservation, the date and time.</p>
+                                </div>
+                            </div>
+                            <div class="content-date-visit-item-step2 page-one__step-two">
+                                <div class="date-visit__date">
+                                    <p class="date-visit__date-heading"><strong>Please</strong> select the <strong>number of visitors and the expected date </strong>of <strong>visit</strong></p>
+                                    <div class="date-visit__date-select">
+                                        <div class="date-visit__date-item">
+                                            <div id="people-section-wrap" class="number-visitor js-number-visitor">
+                                                <i class="far fa-user"></i>
+                                                <p id="select-people">Select the number of visitors</p> 
+                                                <i class="fas fa-angle-down js-people-section-wrap-icondown "></i>
+                                                <i class="fas fa-angle-up js-people-section-wrap-iconup close"></i>
+                                            </div>
+                                            <ul class="number-visitor-modal modal-section js-number-visitor-modal">
+                                                <li class="js-number-visitor-select">1 people</li>
+                                                <li class="js-number-visitor-select">2 people</li>
+                                                <li class="js-number-visitor-select">3 people</li>
+                                                <li class="js-number-visitor-select">4 people</li>
+                                                <li  class="js-number-visitor-select">5 people</li>
+                                                <li  class="js-number-visitor-select">6 people</li>
+                                            </ul>                                            
+                                        </div>
+                                        <div class="date-visit__date-item">
+                                            <div class="date-visit js-date-visit__date-item">
+                                                <i class="far fa-calendar-alt"></i>
+                                                <p class="js-date-visit-selected">
+                                                    <!-- js -->
+                                                </p> 
+                                                <i class="fas fa-angle-down js-date-visit__date-item-icondown"></i>
+                                                <i class="fas fa-angle-up js-date-visit__date-item-iconup close"></i>
+                                            </div>
+                                            <div class="date-visit-modal modal-section js-date-visit-modal">
+                                                <div class="calendar-month">
+                                                    <div class="month-previous-btn">
+                                                        <i class="fas fa-angle-left"></i>
+                                                    </div>
+                                                    <div class="month-year js-month-year">
+                                                        <div class="month-current">October</div>
+                                                        <div class="year-current">2022</div>
+                                                    </div>
+                                                    <div class="js-month-year-change">
+                                                        <div class="month-current">Select month</div>
+                                                    </div>
+                                                    <div class="month-next-btn">
+                                                        <i class="fas fa-angle-right"></i>
+                                                    </div>
+
+
+                                                </div>
+                                                <div class="calender-day-section">
+                                                    <ul class="calendar-date js-calendar-date">
+                                                        <li class="color-red">Sun</li>
+                                                        <li>Mon</li>
+                                                        <li>Tue</li>
+                                                        <li>Wed</li>
+                                                        <li>Thu</li>
+                                                        <li>Fri</li>
+                                                        <li class="color-blue">Sat</li>
+                                                    </ul>
+                                                    <ul class="calendar-day">
+                                                        <!-- code js -->
+                                                    </ul>
+                                                    
+                                                </div>
+
+                                                <div style="line-height: 1.5 !important;font-size: 1rem; font-weight: 700;" class="date-visit__footer">
+                                                    <div class="date-visit__footer-select">
+                                                        <div class="date-visit__footer-item date-visit__footer-item-inCalendar">
+                                                            <label class="input-wrap-inCalendar">
+                                                                 <span class="checkmark"></span>                                       
+                                                            </label>   
+                                                            <label for="" class="date-visit__footer-item-label date-visit__footer-item-label-inCalendar">Immediate reservation OK</label>
+                                                        </div>
+                                                        <div class="date-visit__footer-item date-visit__footer-item-inCalendar">
+                                                            <label class="input-wrap-square">
+                                                                 <span class="checkmark"></span>                                       
+                                                            </label>   
+                                                            <label for="" class="date-visit__footer-item-label date-visit__footer-item-label-inCalendar">Request reservation</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="date-visit__footer-des date-visit__footer-des-one"><span>TEL</span> Telephone reservation</div>
+                                                    <div class="date-visit__footer-des date-visit__footer-des-two">Request reservations will be confirmed by contacting the shop</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                 
+                                </div>
+                                <div class="date-visit__time ">
+                                    <p class="date-visit__time-heading"><strong>Please</strong> select <strong>your visit time</strong></p>
+                                    <div class="date-visit__time-section">
+                                        <div class="arrow-section-left js-arrow-section-left">
+                                            <i class="fas fa-angle-left"></i>
+                                        </div>
+                                            <div class="date-visit__time--list js-date-visit__time--list">
+                                                <!-- code js -->
+                                            </div>
+                                        <div class="arrow-section-right js-arrow-section-right">
+                                            <i class="fas fa-angle-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="date-visit__footer">
+                                    <div class="date-visit__footer-select">
+                                        <div class="date-visit__footer-item ">
+                                            <label class="input-wrap-inTime">
+                                                 <span class="checkmark"></span>                                       
+                                            </label>   
+                                            <label for="" class="date-visit__footer-item-label-inTime ">Immediate reservation OK</label>
+                                        </div>
+                                        <div class="date-visit__footer-item ">
+                                            <label class="input-wrap-square-inTime">
+                                                 <span class="checkmark"></span>                                       
+                                            </label>   
+                                            <label for="" class="date-visit__footer-item-label-inTime ">Request reservation</label>
+                                        </div>
+                                    </div>
+                                    <div class="date-visit__footer-des-inTime">Request reservations will be confirmed by contacting the shop</div>
+                                </div>
+                            </div>
+                    </div>
+                    <!-- END SELECT DATE AND TIME -->
+    
+    
+                    <!-- SELECT SEAT -->
+                    <div class="content-item-selectSeat content-date-visit-item box-shadow-ful-3px">
+                           <div class="content-item-selectSeat-step1 ">
+                               <div class="content-date-visit-heading content-heading opacity-06 js-content-date-visit-heading">
+                                   <p>Please select a <strong>seat</strong></p>
+                                    <div class="js-changeseat close">Change</div>
+                               </div>
+                               <div class="content-date-visit-des page-one__step-one">
+                                   <p>You can select the seats that can be reserved by selecting the number of people, the date of visit, the time, and the course.</p>
+                               </div>
+                            </div>
+                            <ul class="content-item-selectSeat-step2 page-one__step-two js-content-item-selectSeat-step2">
+                               <!-- js -->
+                            </ul>
+                    </div>
+                    <!-- END SELECT SEARCH -->
+    
+                    <!-- BUTTON SUBMIT -->
+                    <div class="submit-btn-section js-submit-btn-section-one">
+                        <button class="submit-btn">Proceed to enter reservation information</button>
+                    </div>
+                    <!-- END BUTTON SUBMIT -->
+                </div>
+                  <!-- FOOTER -->
+                <div id="footer">
+                    <p class="footer-des">Even if the date has an "x", you may be able to make a reservation due to cancellation.</p>
+                     <p class="footer-contact">050-5304-9884 <span class="footer-contact-sub">(Reservation number)</span></p>
+                </div>
+        <!-- END FOOTER -->
+            </div>
+
+            <div class="page-two">
+                <div class="content-section">
+                    <!-- CHECK INFORMATION -->
+                    <div class="content-item-selectCourse box-shadow-ful-3px">
+                        <div class="content-heading check__inf-heading">
+                                <p>Please check the reservation details</p>
+                        </div>
+                        <div class="check__inf--datetime">
+                            <p>Private room dining Rakuzo-RAKUZO-Sapporo station square store</p>
+                            <h2 class="js-check__inf--datetime-content">
+                                <div class="js-check__inf--day"></div>
+                                <div class="space">,</div>
+                                <div class="js-check__inf--month"></div>
+                                <div class="js-check__inf--date"></div>
+                                <div class="space">,</div>
+                                <div class="js-check__inf--year"></div>
+                                <div class="space"></div>
+                                <div class="js-check__inf--people"></div>
+                                <div class="space"></div>
+                                <div class="js-check__inf--time"></div>
+                            </h2>
+                        </div>
+                        <div class="content-item-selectCourse-des">
+                            <h3 class="content-item-selectCourse-des-heading">Reservation format</h3>
+                            <h3 class="content-item-selectCourse-des-sub-heading">Book immediately</h3>
+                            <ul class="content-item-selectCourse-des-text">
+                                <i class="fas fa-circle"></i>
+                                <li>The reservation format is immediate reservation. The reservation will be confirmed when the reserrvation is completed on the WEB.</li>
+                            </ul>
+                        </div>
+                        <div class="underlined-element"></div>
+
+                        <div class="js-check__inf--course">
+                                <h3 class="js-check__inf--course--heading">Booked course</h3>
+                                <div class="js-check__inf--course--value">
+                                    <!-- js -->
+                                </div>
+                        </div>
+                        <div class="underlined-element"></div>
+                        <div class="js-check__inf--seat">
+                            
+                               <!-- js -->
+                        </div>
+                    </div>
+                    <!-- END  CHECK INFORMATION -->
+    
+    
+                    <!-- PAYPAY BONUS -->
+                    <div class="paypaybonus box-shadow-ful-3px">
+                        <h3 class="paypaybonus__heading">
+                            Earn PayPay Bonus
+                            <i class="fa-solid fa-circle-question"></i>
+                        </h3>
+                        <div class="underlined-element"></div>
+                        <p class="paypaybonus__content--heading"><strong>In visit us</strong><i class="fa-brands fa-pinterest-square"></i><strong><span class="strong-span">150 </span><span class="nomal-span">equivalent yen</span></strong> (PayPay bonus) <strong><span class="strong-span">acquisition</span></strong></p>
+                        <ul class="paypaybonus__content--list-text">
+                            <div class="paypaybonus__content--list-text-member">
+                                <i class="ti-star"></i><li>   If you have not linked with PayPay, you can link from the reservation completion screen.</li>                            
+                            </div>
+                            <div class="paypaybonus__content--list-text-member">
+
+                            <i class="ti-star"></i><li>   The amount of PayPay bonus granted may vary dêpnding on the conditions of your reservation. Please <a href="">see here</a> for details</li>
+                           </div>
+                           <div class="paypaybonus__content--list-text-member">
+                            <i class="ti-star"></i><li>   The maximum PayPay bonus you can get with Retty is equivalent to 3,000 yen per month.</li>
+                            </div>
+                            <div class="paypaybonus__content--list-text-member">
+                            <i class="ti-star"></i><li>   PayPay Bonus cannot be withdrawn or tranferred. Also avaliable at the PayPay oficial store</li>
+                            </div>
+                        </ul>
+
+                    </div>
+                    <!-- END PAYPAY BONUS -->
+                    
+                    <!-- FORM INFOR-->
+                    <form action="" onsubmit="">
+                            <div class="form-contact box-shadow-ful-3px">
+                                <div class="input__member" >
+                                    <label for="input-name" class="input__member--label"><strong>Name</strong><span> Mandatory</span> (Please input in Katakana)</label>
+                                    <div class="input__member--input">
+                                        <input type="text" id="input-name" placeholder="Enter your name" required/>
+                                        <i class="fa-solid fa-circle-check js-fa-circle-check-oneicon close"></i>
+                                        <i class="fas fa-times-circle js-fa-times-circle-oneicon close"></i>
+                                    </div>
+                                </div>
+                                <div class="input__member">
+                                    <label for="input-cell-phone" class="input__member--label"><strong>Cell phone</strong><span> Mandatory</span> (Enter 11 digits without hyphens)</label>
+                                    <div class="input__member--input">
+                                        <input type="text" id="input-cell-phone" placeholder="Enter your cell phone" required/>
+                                        <i class="fa-solid fa-circle-check js-fa-circle-check-twoicon close"></i>
+                                        <i class="fas fa-times-circle js-fa-times-circle-twoicon close"></i>
+                                    </div>
+                                </div>
+                                <div class="input__member">
+                                    <label for="input-email" class="input__member--label"><strong>Email address</strong><span> Mandatory</span></label>
+                                    <div class="input__member--input">
+                                        <input type="text"  id="input-email" placeholder="Enter your email" required/>
+                                        <i class="fa-solid fa-circle-check js-fa-circle-check-threeicon close"></i>
+                                        <i class="fas fa-times-circle js-fa-times-circle-threeicon close"></i>
+                                    </div>
+                                </div>
+                            
+
+                                
+                                <div class="form-contact__note">
+                                    <p>Please be careful not to enter the wrong email address</p>
+                                </div>
+                                <div class="form-contact__text">
+                                    <p>You may not receive the contact email due to the reception refusal settings. Please make setting so that you can recceive email from reserve@retty.me</p>
+                                </div>
+                                <div class="form-contact__checkbox">
+                                    <h3 class="form-contact__checkbox--heacding">Is this your first visit? <span>Any</span></h3>                            
+                                </div>
+
+
+                                <div class="form-contact__checkbox--input">
+                                    <div class="form-contact__checkbox--input__member">
+                                        <label class="form-contact__input-wrap">
+                                            <div class="input-wrap-pageTwo">
+                                                <input type="radio" value="Yes" name="checkFirstVisit" required="required"/> 
+                                                <span class="checkmark-pageTwo"></span>                                       
+                                            </div> 
+                                        </label>
+                                        <p>Yes</p>
+                                    </div>
+                                    <div class="form-contact__checkbox--input__member">
+                                        <label class="form-contact__input-wrap">
+                                            <div class="input-wrap-pageTwo">
+                                                <input type="radio" value="No" name="checkFirstVisit" required="required"/> 
+                                                <span class="checkmark-pageTwo"></span>                                       
+                                            </div> 
+                                        </label>
+                                        <p>No</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="page-two__note">
+                                <p class="page-two__note--one">If the contact information registered at the time of reservation is invalid, the reservation may not be completed at the discretion of the shop</p>
+                                <p class="page-two__note--two">Please check the <span>terms of use</span>, and <span>privacy policy regarding the acquisition of PayPay bonus</span>.</p>
+                            </div>
+
+                            <!-- BUTTON SUBMIT -->
+                            <div class="submit-btn-section page-tow__submit-btn">
+                                <button  style="height: 50px;background-color: #ccc ;color: var(--text-color);" class="submit-btn page-tow__submit-btn-return js-return-page-one" >Return to the previous screen</button>
+                                <button type="submit" style="height: 60px;" class="submit-btn page-tow__submit-btn-next" id="js-page-tow__submit-btn-next">
+                                           <span>I agree to the terms and privacy policy</span>
+                                           <p>Confirm with this reservation content</p>
+                                </button>
+                            </div>
+                    </form>
+                    <!-- END BUTTON SUBMIT -->
+                </div>
+            </div>
+            <div class="page-three">
+                <div class="content-section box-shadow-ful-3px content-section-page-three">
+
+                    <div class="headerpagethree">
+                        <h3 class="headerpagethree-heading">Thank you for your reservation</h3>
+                        <p class="headerpagethree-sub-heading">We have sent a reservation completion email to your contact information.<br>
+                        You can also check the reservation details from the reservation management page.
+                        </p>
+                    </div>
+                    <div class="pay-content">
+                        <div class="pay-content-main">
+                               <h3 class="pay-content-main-heading">If you finish as it is, you will not get the PayPay bonus</h3>
+                                <p class="pay-content-main-sub-heading">If you link with PayPay from this page <br>
+                                At the store <span class="one"><i class="fa-brands fa-pinterest-square"></i>150</span> <span class="two">Equivalent to yen</span> <span class="three">(PayPay bonus)</span> Can be earned
+                                </p>
+                                <div class="pay-content-main-btn">PayPay integration</div>
+                        </div>
+                        <ul class="pay-content-sub">
+                            <div class="paypaybonus__content--list-text-member">
+
+                                <i class="ti-star"></i><li> PayPay bonus will be given about 7 days after your visit</li>
+                            </div>
+                            <div class="paypaybonus__content--list-text-member">
+
+                                <i class="ti-star"></i><li> The amount of PayPay bonus granted may vary depending on the conditions of your reservation, Please <a href="">see here</a> for details</li>
+                            </div>
+                            <div class="paypaybonus__content--list-text-member">
+
+                                <i class="ti-star"></i><li> PayPay Bonus cannot be with drawn or transferred. Also available at the PayPay official store</li>
+                            </div>
+                        </ul>
+                    </div>
+    
+                    <div class="submit-btn-page-three">
+                        <div class="return-page-two js-return-page-two">Confirm the reservation details <i class="fas fa-angle-right"></i></div>
+                        <div class="stop-reservation js-stop-reservation">To store TOP <i class="fas fa-angle-right"></i></div>
+                    </div>
+                </div>
+                <div class="page-there-footer"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script >
+        let daySelected =null;
+        let courseSelected =null;
+        let seatSelected =null;
+        let monthSelected =null;
+        let yearSelected =null;
+        let timeSelected =null;
+        let peopleSelected =null;
+        let checkName =null;
+        let checkCellPhone = null;
+        let checkEmail =null;
+        let checkSeatSelected =0;
+    </script>
+    <script src="./JS/main.js"></script>
+    <script src="./JS/selectCourse.js"></script>
+    <script src="./JS/changePeople.js"></script>
+    <script src="./JS/calendar.js"></script>
+    <script src="./JS/selectTime.js"></script>
+    <script src="./JS/selectSeat.js"></script>
+    <script src="./JS/checkValueForm.js"></script>
+    <script src="./JS/checkConditionChangePage.js"></script>
+    <script src="./JS/changePage.js"></script>
+   
+</body>
+</html>
